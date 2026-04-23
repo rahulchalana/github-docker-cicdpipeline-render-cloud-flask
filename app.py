@@ -8,7 +8,7 @@ model = pickle.load(open('iris_model.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return "ML Model is Live! Send a POST request to /predict"
+    return "ML Model is Live! (Version 2.0 - CI/CD Test Successful)"
 
 @app.route('/predict', methods=['POST'])
 def predict():
