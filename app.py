@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 
+print("Starting Flask app...")
 app = Flask(__name__)
 model = pickle.load(open('iris_model.pkl', 'rb'))
 
